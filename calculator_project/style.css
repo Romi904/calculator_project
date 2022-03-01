@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+}
+body{
+    background-image: url("https://th.bing.com/th/id/R.b511c4d0daf3ce9734463992f173237e?rik=whVrG0GI7OqpCQ&riu=http%3a%2f%2fwww.hdwallpapers.in%2fdownload%2fblur_colors-2560x1440.jpg&ehk=%2fn0IvlXsVY2E95v2egUjymgH84fRcg8hshKRS1M2pp4%3d&risl=&pid=ImgRaw&r=0");
+    color: white;
+}
+table{
+    box-shadow: 5px 10px 1px rgba(128, 128, 128, 0.938);
+}
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}  
+.container{
+    /* border:1px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table tr td{
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 4px solid black;
+}
+table{
+    background-image: url("https://th.bing.com/th/id/OIP.smgeF0syl45KXes5hVzVbgHaEK?pid=ImgDet&rs=1");
+    background-size: cover;
+    border-spacing: 10px;
+    border: 2px groove black;
+    border-radius: 25px;
+    margin: 10px;
+    empty-cells: hide;
+}
+table input{
+    background-color: rgba(128, 128, 128, 0.411);
+    border-bottom: 1px groove black;
+    color: rgb(0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: x-large;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: end;
+    width: 100%;
+    cursor: not-allowed;
+}
+.round{
+    border-radius: 40px;
+}
+table td:nth-child(4){
+    border: none;
+}
+#dot{
+    border-radius: 30px;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border-style: none;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+input:active{
+    outline:0;
+    border:0;
+}
+table th{
+    color: tomato;
+    font-size: x-large;
+    text-shadow: 1px 2px 1px rgb(255, 0, 234);
+    animation: clrchng 2s infinite linear;
+}
+.color{
+    background-color: rgb(208, 255, 0);
+}
+#gif{
+    position: absolute;
+    left: 90px;
+}
+@keyframes clrchng {
+    0%,100%{color: red;}
+    50%{color: blue;}
+}
+/* another animation */
+@keyframes change {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+    <!-- favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+    <link rel="icon" href="icon.jpg" type="image/jpeg" sizes="16x16">
+</head>
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="math.mp4" type="video/mp4">
+        Browser not supported for video.
+    </video> -->
+    <div class="container">
+        <img id="gif" src="gg.gif" type="image/gif" alt="gif">
+        <div class="box">
+            <table>
+                <!-- <caption>Calculator</caption> -->
+                <th colspan="4">
+                    Casio The Calculator
+                </th>
+                <tr>
+                    <td colspan="4" style="border-radius: 5px;border: none;">
+                        <input id="dis" readonly type="text">
+                    </td>
+                <tr>
+                    <td class="round" ><button onclick="dis('(')">(</button></td>
+                    <td class="round" ><button onclick="dis(')')">)</button></td>
+                    <td class="round" style="background-color: tomato;"><button style="background-color: tomato;" onclick="clr()">C</button></td>
+                    <td class="round" style="background-color: rgb(71, 74, 255);"><button style="background-color: rgb(71, 83, 255);" onclick="del()">&#8678;</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td class="round"><button onclick="dis(1)">1</button></td>
+                    <td class="round"><button onclick="dis(2)">2</button></td>
+                    <td class="round"><button onclick="dis(3)">3</button></td>
+                    <td class="round color"><button class="color" onclick="dis('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td class="round"><button onclick="dis(4)">4</button></td>
+                    <td class="round"><button onclick="dis(5)">5</button></td>
+                    <td class="round"><button onclick="dis(6)">6</button></td>
+                    <td class="round color"><button class="color" onclick="dis('-')">&#9866;</button></td>
+                </tr>
+                <tr>
+                    <td class="round"><button onclick="dis(7)">7</button></td>
+                    <td class="round"><button onclick="dis(8)">8</button></td>
+                    <td class="round"><button onclick="dis(9)">9</button></td>
+                    <td class="round color"><button class="color" onclick="dis('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td id="dot"><button onclick="dis('.')">.</button></td>
+                    <td class="round"><button onclick="dis(0)">0</button></td>
+                    <td class="round" style="background-color: rgb(71, 255, 80);"><button style="background-color: rgb(102, 255, 71);" onclick="solve()">=</button></td>
+                    <td class="round color"><button class="color" onclick="dis('*')">*</button></td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
